@@ -1,0 +1,50 @@
+@import "../Abstracts/mixins";
+@import "../Abstracts/variables";
+
+.navbar {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  background: transparent;
+  height: 100px;
+  transition: all 0.5s linear;
+  z-index: 5;
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    align-items: center;
+  }
+  &__left img {
+    position: relative;
+    top: 15px;
+    width: 50px;
+    height: 10%;
+  }
+  &__right {
+    position: relative;
+    top: 10%;
+    display: flex;
+    list-style: none;
+
+    & li .link {
+      color: $color-white;
+      text-decoration: none;
+      font-size: 16px;
+      font-weight: 500;
+      padding: 15px 7px;
+      margin: 10px 15px;
+      transition: 0.3s ease padding;
+      @include responsive(768px) {
+        font-size: 14px;
+        padding: 15px 0px;
+
+      }
+      @include responsive(512px) {
+        font-size: 10px;
+        padding: 15px 0px;
+      }
+    }
+  }
+}

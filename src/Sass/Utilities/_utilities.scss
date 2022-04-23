@@ -1,0 +1,39 @@
+@import '../Abstracts/variables';
+@import '../Abstracts//mixins';
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    padding: 0 10px;
+    @include responsive(765px) {
+        width: 90%;
+        padding: 0 10px;
+      }
+}
+.whiteBg {
+    background: $color-white !important;
+    box-shadow: 0 5px 30px rgba(0,0,0,0.1);
+    & .link{
+        color: #000 !important;
+    }
+}
+
+.transparent {
+    background: transparent;
+
+    & .link {
+        color: $color-white ;
+    }
+}
+
+.pl-15 {
+    padding-left: 15px;
+}
+
+.mt-60{
+    margin-top: 40px;
+}
+
+.rel{
+    position: relative;
+}

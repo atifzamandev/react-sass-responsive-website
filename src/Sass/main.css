@@ -1,0 +1,277 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=Open+Sans:wght@300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.whiteBg {
+  background: #fff !important;
+  box-shadow: 0 5px 30px rgba(0, 0, 0, 0.1);
+}
+.whiteBg a {
+  color: #000 !important;
+}
+
+.transparent {
+  background: transparent;
+}
+.transparent a {
+  color: #fff;
+}
+
+.pl-15 {
+  padding-left: 15px;
+}
+
+.mt-60 {
+  margin-top: 40px;
+}
+
+.rel {
+  position: relative;
+}
+
+.col-1 {
+  flex: 0 0 8.3333333333%;
+  width: 8.3333333333%;
+  max-width: 8.3333333333%;
+}
+
+.col-2 {
+  flex: 0 0 16.6666666667%;
+  width: 16.6666666667%;
+  max-width: 16.6666666667%;
+}
+
+.col-3 {
+  flex: 0 0 25%;
+  width: 25%;
+  max-width: 25%;
+}
+
+.col-4 {
+  flex: 0 0 33.3333333333%;
+  width: 33.3333333333%;
+  max-width: 33.3333333333%;
+}
+
+.col-5 {
+  flex: 0 0 41.6666666667%;
+  width: 41.6666666667%;
+  max-width: 41.6666666667%;
+}
+
+.col-6 {
+  flex: 0 0 50%;
+  width: 50%;
+  max-width: 50%;
+}
+
+.col-7 {
+  flex: 0 0 58.3333333333%;
+  width: 58.3333333333%;
+  max-width: 58.3333333333%;
+}
+
+.col-8 {
+  flex: 0 0 66.6666666667%;
+  width: 66.6666666667%;
+  max-width: 66.6666666667%;
+}
+
+.col-9 {
+  flex: 0 0 75%;
+  width: 75%;
+  max-width: 75%;
+}
+
+.col-10 {
+  flex: 0 0 83.3333333333%;
+  width: 83.3333333333%;
+  max-width: 83.3333333333%;
+}
+
+.col-11 {
+  flex: 0 0 91.6666666667%;
+  width: 91.6666666667%;
+  max-width: 91.6666666667%;
+}
+
+.col-12 {
+  flex: 0 0 100%;
+  width: 100%;
+  max-width: 100%;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.header {
+  width: 100%;
+  height: 75vh;
+  background: url("../../images/slide-1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-blend-mode: overlay;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+.header__content {
+  text-align: center;
+}
+.header__content-links a {
+  text-decoration: none;
+  color: #fff;
+  margin-left: 15px;
+  font-size: 17px;
+}
+.header__content-span {
+  display: inline-block;
+  height: 15px;
+  width: 1.5px;
+  background: #fff;
+  margin-left: 20px;
+  transform: rotate(10deg);
+}
+.header__content-h1 {
+  font-size: 75px;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+  font-weight: 600;
+}
+
+.navbar {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  background: transparent;
+  height: 100px;
+  transition: all 0.5s linear;
+}
+.navbar__content {
+  display: flex;
+  justify-content: space-between;
+  height: 80px;
+  align-items: center;
+}
+.navbar__left img {
+  position: relative;
+  top: 15px;
+  width: 20%;
+  height: 10%;
+}
+.navbar__right {
+  position: relative;
+  top: 10%;
+  display: flex;
+  list-style: none;
+}
+.navbar__right li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 15px 7px;
+  margin: 10px 15px;
+}
+
+.about {
+  padding: 120px 0;
+  width: 100%;
+}
+.about__h4 {
+  font-size: 30px;
+  font-weight: 600;
+}
+.about__text p {
+  color: #777;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 2;
+  padding-left: 50px;
+}
+.about__section {
+  background: #efefefef;
+  padding: 60px;
+  text-align: center;
+}
+.about__section-icon {
+  color: #75dab4;
+  margin-bottom: 10px;
+}
+.about__section-heading h6 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+.about__section-test {
+  color: #777;
+  font-size: 15px;
+  letter-spacing: 1px;
+}
+
+.show {
+  background: url("/images/slide-2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-blend-mode: overlay;
+  width: 100%;
+  height: 500px;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  color: #fff;
+}
+.show__container h1 {
+  font-size: 45px;
+  font-weight: 700;
+}
+.show__card {
+  position: absolute;
+  bottom: -250px;
+  right: 0;
+  width: 470px;
+  padding: 80px 40px;
+  background-color: #75dab4;
+  color: #000;
+}
+.show__card-h6 {
+  font-size: 12px;
+  font-weight: 300;
+  letter-spacing: 3px;
+  margin-bottom: 10px;
+}
+.show__card-h4 {
+  font-size: 30px;
+  font-weight: 600;
+  color: #0c0f16;
+  margin-bottom: 10px;
+}
+.show__card-text {
+  font-size: 15px;
+  letter-spacing: 1px;
+  line-height: 25px;
+}
+
+.blank {
+  height: 100%;
+  height: 200px;
+}
+/*# sourceMappingURL=main.css.map */
